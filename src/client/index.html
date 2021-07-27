@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Equitas Bank</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="App.css" />
+    <link
+      rel="icon"
+      href="https://www.equitasbank.com/sites/default/files/equitas-logo.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script>
+      /* function hover(element) {
+           document.getElementsByClassName("menu-listing")[0].style.display = 'block';
+       }
+       function unhover(element) {
+           document.getElementsByClassName("menu-listing")[0].style.display = 'none';
+       }  */
+
+       function inVisible(element) {
+           //Checking if the element is
+           //visible in the viewport
+           var WindowTop = $(window).scrollTop();
+           var WindowBottom = WindowTop + $(window).height();
+           var ElementTop = element.offset().top;
+           var ElementBottom = ElementTop + element.height();
+           //animating the element if it is
+           //visible in the viewport
+           if ((ElementBottom <= WindowBottom) && ElementTop >= WindowTop)
+               animate(element);
+           }
+
+           function animate(element) {
+           //Animating the element if not animated before
+           if (!element.hasClass('ms-animated')) {
+               var maxval = element.data('max');
+               var html = element.html();
+               element.addClass("ms-animated");
+               $({
+               countNum: element.html()
+               }).animate({
+               countNum: maxval
+               }, {
+               //duration 5 seconds
+               duration: 5000,
+               easing: 'linear',
+               step: function() {
+                   element.html(Math.floor(this.countNum) + html);
+               },
+               complete: function() {
+                   element.html(this.countNum + html);
+               }
+               });
+           }
+
+           }
+
+           //When the document is ready
+           $(function() {
+           //This is triggered when the
+           //user scrolls the page
+           $(window).scroll(function() {
+               //Checking if each items to animate are
+               //visible in the viewport
+               $("h4[data-max]").each(function() {
+               inVisible($(this));
+               });
+           })
+           });
+    </script>
+  </body>
+</html>
