@@ -8,10 +8,10 @@ class Footer extends Component {
             <h4>EXPLORE</h4>
             <p><a href="#">Investor Relations</a></p>
             <p><a href="#">Regulatory Disclosure Section</a></p>
-            <p><a href="#">ICICI Bank Answers</a></p>
+            <p><a href="#">Equitas Bank Answers</a></p>
             <p><a href="#">Safe Banking</a></p>
-            <p><a href="#">RBI Kehta Hai</a></p>
-            <p><a href="#">RBI: Beware of Fictitious Offers</a></p>
+            <p><a href="#">RBI Circuler</a></p>
+            <p><a href="#">RBI: Fraud Alerts</a></p>
             <p><a href="#">Money Transfer to India</a></p>
             <p><a href="#">Internet Banking</a></p>
             <p><a href="#">Mobile Banking</a></p>
