@@ -13,7 +13,7 @@ class Home extends Component {
           var request = new XMLHttpRequest();
           request.open(
             'GET',
-            'http://10.254.8.218:9080/mfp/api/adapters/AccountServiceAdapter/resource/accountBalance?userid=11'
+            'http://mobilefoundation.dgsl-mfs-sng01-vs-8x32-91fe099d4c12f7021911cbcfe3d01cf2-0000.sng01.containers.appdomain.cloud/mfp/api/adapters/AccountServiceAdapter/resource/accountBalance?userid=11'
           );
           request.onreadystatechange = function() {
             if (this.readyState === 4 && this.status === 200) {
@@ -38,7 +38,7 @@ class Home extends Component {
     var request = new XMLHttpRequest();
     request.open(
       'GET',
-      'http://10.254.8.218:9080/mfp/api/adapters/AccountServiceAdapter/resource/getCIBILScore?pan=dsds'
+      'http://mobilefoundation.dgsl-mfs-sng01-vs-8x32-91fe099d4c12f7021911cbcfe3d01cf2-0000.sng01.containers.appdomain.cloud/mfp/api/adapters/AccountServiceAdapter/resource/getCIBILScore?pan=dsds'
     );
     request.onreadystatechange = function() {
       if (this.readyState === 4 && this.status === 200) {
