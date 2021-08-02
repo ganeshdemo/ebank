@@ -12,21 +12,21 @@ class App extends Component {
             <div className="carousel-inner">
               <div className="item active">
                 <img
-                  src="https://www.icicibank.com/managed-assets/images/personal/home-page-banners/Desktop/loved-one-wheel-happiness-d.jpg"
+                  src="images/eva1.jpg"
                   alt="Los Angeles"
                 />
               </div>
 
               <div className="item">
                 <img
-                  src="https://www.icicibank.com/managed-assets/images/personal/home-page-banners/Desktop/the-orange-book-download-d.jpg"
+                  src="images/eva2.jpg"
                   alt="Chicago"
                 />
               </div>
 
               <div className="item">
                 <img
-                  src="https://www.icicibank.com/managed-assets/images/personal/home-page-banners/Desktop/paying-bills-autopay-d.jpg"
+                  src="images/eva4.jpg"
                   alt="New york"
                 />
               </div>

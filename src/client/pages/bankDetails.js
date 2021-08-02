@@ -102,9 +102,7 @@ class BankDetails extends Component {
                         My View
                       </NavLink>
                     </li>
-                    <li>
-                      <a href="#">Personal Details</a>
-                    </li>
+                    
                     <li>
                       <NavLink exact to="/bankdetails">
                         Account Summary
@@ -112,6 +110,9 @@ class BankDetails extends Component {
                     </li>
                     <li>
                       <a href="#">Financial Journey</a>
+                    </li>
+					<li>
+                      <a href="#">Personal Details</a>
                     </li>
                   </ul>
                 </li>
@@ -396,7 +397,7 @@ class BankDetails extends Component {
                         >
                           <i className="glyphicon glyphicon-user"></i>
                           <i className="more-less glyphicon glyphicon-plus"></i>
-                          iWish-Flexible RD
+                          Eva Savings
                         </a>
                       </h4>
                     </div>

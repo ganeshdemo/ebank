@@ -429,10 +429,7 @@ A IMG, UL.breadcrumbTools LI.first, .widget-content TABLE, .widget .table TABLE,
 .btn {
     border: 1px solid #d01e2e;
 }
-.btn {
-    font-family: 'Open Sans' !important;
-    font-weight: 700 !important;
-}
+
 .btn.btn-primary {
     background: #d01e2e;
     color: #fff;
@@ -706,3 +703,9 @@ ul.transaction-h{height:100%;}
 .quick-linksH ul{padding:10px;}
 .quick-linksH ul li a{color:#333; font-size:13px;}
 .quick-linksH ul li a:hover{text-decoration:underline;}
+
+.modalheader {
+    background-color: midnightblue;
+    color: white;
+}
+

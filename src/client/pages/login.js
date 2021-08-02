@@ -153,7 +153,7 @@ class Login extends Component {
             <img
               alt="Bill Pay Banner"
               className="banner-img"
-              src="https://www.icicibank.com//managed-assets/images/personal/safe-banking/bill-pay-start-of-the-month-primer-1.jpg"
+              src="images/eva3.jpg"
             />
             <div
               id="login-overlay"
@@ -266,7 +266,7 @@ class Login extends Component {
                                   Pin
                                 </label>
                                 <input
-                                  type="text"
+                                  type="password"
                                   className="form-control"
                                   id="pin"
                                   name="pin"

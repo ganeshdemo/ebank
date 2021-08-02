@@ -164,20 +164,21 @@ class Home extends Component {
                   </a>
                   <ul className="dropdown-menu">
                     <li>
-                      <NavLink exact to="/dashboard">
+                       <NavLink exact to="/dashboard">
                         My View
                       </NavLink>
                     </li>
+                    
                     <li>
-                      <a href="#">Personal Details</a>
-                    </li>
-                    <li>
-			<NavLink exact to="/bankdetails">
-                        	Account Summary
+                       <NavLink exact to="/bankdetails">
+                        Account Summary
                       </NavLink>
                     </li>
                     <li>
                       <a href="#">Financial Journey</a>
+                    </li>
+					<li>
+                      <a href="#">Personal Details</a>
                     </li>
                   </ul>
                 </li>
@@ -594,7 +595,7 @@ class Home extends Component {
                   </div>
                   <div className="row acc-opt">
                     <div className="col-xs-4 col-sm-2 col-md-2">
-                      <a href="#" className="bg-blue-i">
+                      <a href="#" className="bg-blue-i" >
                         {' '}
                         <i>
                           <span className="glyphicon glyphicon glyphicon-star-empty"></span>
@@ -635,7 +636,7 @@ class Home extends Component {
                         <i>
                           <span className="glyphicon glyphicon glyphicon-star-empty"></span>
                         </i>{' '}
-                        Open iWish
+                        Open FD
                       </a>
                     </div>
                     <div className="col-xs-4 col-sm-2 col-md-2">
@@ -735,14 +736,14 @@ class Home extends Component {
                                 </a>
                               </li>
                               <li>
-                                <p className="subtitle">Outstanding</p>
+                                <p className="subtitle">Outstanding Balance</p>
                                 <p id="outstandingLimit">******</p>
                                 <a href="#" className="white-btn">
                                   Modify Limit
                                 </a>
                               </li>
                               <li>
-                                <p className="subtitle">Prev. Balance</p>
+                                <p className="subtitle">Due Balance</p>
                                 <p id="prevBalance">******</p>
                                 <a href="#" className="white-btn">
                                   Modify Limit
@@ -803,7 +804,7 @@ class Home extends Component {
                     <a href="#">
                       {' '}
                       <p style={{ margin: 'margin: 0 0 0px' }}>
-                        bye your dream car
+                        buy your dream car
                       </p>{' '}
                       <span className="grey-text">Loan upto Rs.20,00,000</span>
                     </a>
