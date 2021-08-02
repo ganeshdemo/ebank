@@ -8,10 +8,10 @@ class Header extends Component {
         <div>
         <nav className="navbar">
             <div className="menu-listing">
-                <a href="#">PRIVILEGE</a> | 
-                <a href="#">WEALTH</a> | 
-                <a href="#">PRIVATE</a> | 
-                <a href="#">MILLENNIAL</a>
+                <a href="#">Privilage</a> | 
+                <a href="#">Wealth</a> | 
+                <a href="#">Private</a> | 
+                <a href="#">Millenial</a>
             </div>
             <div className="container-fluid">
             <div className="navbar-header">
