@@ -24,7 +24,7 @@ class Login extends Component {
     var request = new XMLHttpRequest();
     request.open(
       'GET',
-      'http://10.254.8.218:9080/mfp/api/adapters/javaAdapter/resource/generateOTP'
+      'http://mobilefoundation.dgsl-mfs-sng01-vs-8x32-91fe099d4c12f7021911cbcfe3d01cf2-0000.sng01.containers.appdomain.cloud/mfp/api/adapters/javaAdapter/resource/generateOTP'
     );
     request.onreadystatechange = function() {
       if (this.readyState === 4 && this.status === 200) {
@@ -38,7 +38,7 @@ class Login extends Component {
     var request = new XMLHttpRequest();
     request.open(
       'GET',
-      'http://10.254.8.218:9080/mfp/api/adapters/javaAdapter/resource/generateOTP'
+      'http://mobilefoundation.dgsl-mfs-sng01-vs-8x32-91fe099d4c12f7021911cbcfe3d01cf2-0000.sng01.containers.appdomain.cloud/mfp/api/adapters/javaAdapter/resource/generateOTP'
     );
     request.onreadystatechange = function() {
       if (this.readyState === 4 && this.status === 200) {
@@ -53,7 +53,7 @@ class Login extends Component {
 
     if (event.target.id == 'loginForm') {
       var url =
-        'http://10.254.8.218:9080/mfp/api/adapters/javaAdapter/resource/loginPost';
+        'http://mobilefoundation.dgsl-mfs-sng01-vs-8x32-91fe099d4c12f7021911cbcfe3d01cf2-0000.sng01.containers.appdomain.cloud/mfp/api/adapters/javaAdapter/resource/loginPost';
       var mythis = this;
       var request = new XMLHttpRequest();
       request.open('POST', url);
@@ -74,7 +74,7 @@ class Login extends Component {
       request.send(formData);
     } else if (event.target.id == 'pinForm') {
       var url =
-        'http://10.254.8.218:9080/mfp/api/adapters/javaAdapter/resource/pinAuth';
+        'http://mobilefoundation.dgsl-mfs-sng01-vs-8x32-91fe099d4c12f7021911cbcfe3d01cf2-0000.sng01.containers.appdomain.cloud/mfp/api/adapters/javaAdapter/resource/pinAuth';
       var mythis = this;
       var request = new XMLHttpRequest();
       request.open('POST', url);
@@ -95,7 +95,7 @@ class Login extends Component {
       request.send(formData);
     } else if (event.target.id == 'optForm') {
       var url =
-        'http://10.254.8.218:9080/mfp/api/adapters/javaAdapter/resource/otpAuth';
+        'http://mobilefoundation.dgsl-mfs-sng01-vs-8x32-91fe099d4c12f7021911cbcfe3d01cf2-0000.sng01.containers.appdomain.cloud/mfp/api/adapters/javaAdapter/resource/otpAuth';
       // var myOtp = document.getElementById('tempOTP').innerHTML;
       var mythis = this;
       var request = new XMLHttpRequest();
@@ -117,7 +117,7 @@ class Login extends Component {
       request.send(formData);
     } else if (event.target.id == 'twofactorForm') {
       var url =
-        'http://10.254.8.218:9080/mfp/api/adapters/javaAdapter/resource/twoFactorAuth';
+        'http://mobilefoundation.dgsl-mfs-sng01-vs-8x32-91fe099d4c12f7021911cbcfe3d01cf2-0000.sng01.containers.appdomain.cloud/mfp/api/adapters/javaAdapter/resource/twoFactorAuth';
       var mythis = this;
       var request = new XMLHttpRequest();
       request.open('POST', url);
