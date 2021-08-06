@@ -66,18 +66,20 @@ class BankDetails extends Component {
                   <a href="#">
                     <span
                       className="glyphicon glyphicon-bell"
-                      style={{ fontSize: '25px', marginTop: '-10px' }}
+                      style={{ fontSize: '25px', marginTop: '-2px' }}
                     ></span>
                   </a>
                 </li>
                 <li>
-                  <button
+                       <NavLink exact to="/login">
+                         <button
                     className="btn btn-primary"
-                    style={{ marginTop: '5px' }}
+					style={{ marginTop: '-10px' }}
                   >
                     logout
                   </button>
-                </li>
+                      </NavLink>
+                    </li>
               </ul>
             </div>
           </div>
@@ -570,20 +572,19 @@ class BankDetails extends Component {
                             <option>Closed status</option>
                           </select>
                         </th>
-                        <th></th>
-                        <th></th>
+                        
                       </tr>
                     </tfoot>
                   </table>
                 </div>
                 <div className="detail-download">
-                  Download Details As:
+                  Download Details As:-
                   <select>
-                    <options>Cheque Status Inquiry</options>
-                    <options></options>
-                    <options></options>
+                    <option>--Select--</option>
+                    <option>PDF</option>
+                    <option>Word</option>
                   </select>
-                  <a href="#">Ok</a>
+                  <a href="#"> Download</a>
                 </div>
               </div>
               <div className="preQuaOffers">
