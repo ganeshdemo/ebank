@@ -132,18 +132,20 @@ class Home extends Component {
                   <a href="#">
                     <span
                       className="glyphicon glyphicon-bell"
-                      style={{ fontSize: '25px', marginTop: '-10px' }}
+                      style={{ fontSize: '25px', marginTop: '-2px' }}
                     ></span>
                   </a>
                 </li>
                 <li>
-                  <button
+                       <NavLink exact to="/login">
+                         <button
                     className="btn btn-primary"
-                    style={{ marginTop: '5px' }}
+					style={{ marginTop: '-10px' }}
                   >
                     logout
                   </button>
-                </li>
+                      </NavLink>
+                    </li>
               </ul>
             </div>
           </div>
