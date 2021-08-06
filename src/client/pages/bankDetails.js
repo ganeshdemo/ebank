@@ -49,7 +49,7 @@ class BankDetails extends Component {
                 <input
                   autoComplete="off"
                   id="search"
-                  placeholder="Search for products, services..."
+                  placeholder="Search for products , services..."
                 />{' '}
               </div>
               <ul
