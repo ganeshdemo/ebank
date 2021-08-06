@@ -59,7 +59,7 @@ class Home extends Component {
         document.getElementById('prevBalance').innerHTML = 'Rs. 0';
       } else {
         e.target.id = 'off';
-        e.target.innerHTML = 'Show Balance <span>OFF</span>';
+        e.target.innerHTML = 'Show Balance <span>OFF </span>';
         document.getElementById('availableLimit').innerHTML = '******';
         document.getElementById('outstandingLimit').innerHTML = '******';
         document.getElementById('prevBalance').innerHTML = '******';
